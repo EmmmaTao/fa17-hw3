@@ -9,8 +9,4 @@ class StudentsController < ApplicationController
 		@age = params[:age]
 		@fav_num = params[:fav_num]
 	end
-
-	def transit
-		redirect_to students_new_path
-	end
 end

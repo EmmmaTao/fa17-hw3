@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   post '/teachers', to: 'teachers#create'
   get '/students/new', to: 'students#new'
   post '/students', to: 'students#create'
-  get '/', to: 'students#transit'
+  get '/', to: redirect('/students/new')
 end
